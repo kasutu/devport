@@ -1,0 +1,46 @@
+---
+interface Props {
+  skillName: string;
+  percentage: number;
+}
+
+const { skillName, percentage } = Astro.props;
+---
+
+<section>
+  <div class="skill-container">
+    <p>{skillName}</p>
+    <div class="skill" style={`width: ${percentage}%;`}>{percentage}%</div>
+  </div>
+</section>
+
+<style>
+  .skill-container {
+    display: grid;
+    grid-template-columns: 150px 500px; /* Set the maximum width of the skill name and skill bar */
+    align-items: center;
+    column-gap: 20px; /* Add some space between the skill name and skill bar */
+  }
+
+  .skill {
+    text-align: right;
+    font-size: medium;
+    padding-right: 20px;
+    line-height: 20px;
+    color: white;
+    background: var(--gradient-accent);
+    border-radius: 5px;
+  }
+
+  @media (max-width: 900px) {
+    .skill-container {
+      grid-template-columns: 150px 450px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .skill-container {
+      grid-template-columns: 150px 250px;
+    }
+  }
+</style>
