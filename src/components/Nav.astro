@@ -76,18 +76,7 @@ const iconLinks: {
     </ul>
   </noscript>
   <noscript style="display: contents;">
-    <div class="menu-footer">
-      <div class="socials">
-        {
-          iconLinks.map(({ href, icon, label }) => (
-            <a href={href} class="social">
-              <span class="sr-only">{label}</span>
-              <Icon icon={icon} />
-            </a>
-          ))
-        }
-      </div>
-    </div>
+   
   </noscript>
   <div id="menu-content" hidden>
     <ul class="nav-items">
@@ -116,10 +105,12 @@ const iconLinks: {
       <div class="socials">
         {
           iconLinks.map(({ href, icon, label }) => (
-            <a href={href} class="social">
-              <span class="sr-only">{label}</span>
-              <Icon icon={icon} />
-            </a>
+            <>
+              <a href={href} class="social">
+                <span class="sr-only">{label}</span>
+                <Icon icon={icon} />
+              </a>
+            </>
           ))
         }
       </div>
