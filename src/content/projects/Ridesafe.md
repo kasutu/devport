@@ -9,6 +9,7 @@ tags:
   - IoT
   - Bluetooth
   - Mobile app
+  - Startup
 ---
 
 #### RideSafe: Your smart helmet companion

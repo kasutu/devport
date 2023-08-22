@@ -9,6 +9,7 @@ tags:
   - Linktree
   - Storage
   - Sharing
+  - School Project
 ---
 
 #### Fordastore - An online link storing app.

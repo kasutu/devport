@@ -8,6 +8,7 @@ description: |
 tags:
   - Marketplace
   - In-campus
+  - Startup
 ---
 
 #### UniHub - your student marketplace!

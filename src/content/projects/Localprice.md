@@ -8,6 +8,7 @@ description: |
 tags:
   - Marketplace
   - Mobile App
+  - School Project
 ---
 
 #### localprice - An ecommerce app.
